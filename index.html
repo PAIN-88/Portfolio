@@ -139,7 +139,16 @@
     .hero-tag .tag-dot { width: 6px; height: 6px; background: var(--orange); border-radius: 50%; animation: pulse 2s ease infinite; }
     @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(1.4)} }
     .hero-name { font-family: var(--font-display); font-size: clamp(3rem,7vw,6rem); font-weight: 800; letter-spacing: -0.04em; line-height: 0.95; color: var(--dark); margin-bottom: 0.5rem; animation: fadeSlideUp 0.7s ease 0.15s both; }
-    .hero-title { font-family: var(--font-display); font-size: clamp(1.5rem,3.5vw,2.8rem); font-weight: 700; letter-spacing: -0.03em; color: var(--dark); opacity: 0.55; margin-bottom: 1.5rem; animation: fadeSlideUp 0.7s ease 0.25s both; }
+  .hero-name {
+  font-family:    var(--font-display);
+  font-size:      clamp(1.75rem, 7vw, 6rem); /* ← was 3rem min */
+  font-weight:    800;
+  letter-spacing: -0.04em;
+  line-height:    0.95;
+  color:          var(--dark);
+  margin-bottom:  0.5rem;
+  animation:      fadeSlideUp 0.7s ease 0.15s both;
+}
     .hero-desc { font-size: clamp(0.95rem,1.5vw,1.05rem); color: var(--dark); opacity: 0.7; max-width: 420px; line-height: 1.7; margin-bottom: 2.5rem; animation: fadeSlideUp 0.7s ease 0.35s both; }
     .hero-cta {
       display: inline-flex; align-items: center; gap: 10px;
